@@ -1,9 +1,14 @@
+import {adsNearby} from './data';
+import { setFormElementDisabled } from './map';
+
 let firstClickOnMainPin = true;
 const map = document.querySelector('.map');
 const mapPinMain = document.querySelector('.map__pin--main');
 const mapPins = document.querySelector('.map__pins');
 const pinsoverlay = document.querySelector('.map__pinsoverlay');
 const HTML = document.querySelector('html');
+
+console.log("Hello");
 
 
 const mapClickHandler = function(evt){ 
@@ -71,9 +76,4 @@ const mapClickHandler = function(evt){
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseup', onMouseUp)
 }
-mapPinMain.addEventListener('mousedown', mapClickHandler);
-
-
-//if(firstClickOnMainPin === false){ 
-     
-//}
+export default mapPinMain.addEventListener('mousedown', mapClickHandler);

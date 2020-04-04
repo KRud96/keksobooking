@@ -1,6 +1,6 @@
 const formNotice = document.querySelector('.notice').children[1];
 
-const setFormElementDisabled = function(disabled){
+export function setFormElementDisabled (disabled){
     if(disabled == true){
         for (let j = 0; j < formNotice.children.length; j++){
             formNotice.children[j].setAttribute('disabled','');
@@ -13,5 +13,4 @@ const setFormElementDisabled = function(disabled){
     }    
 }
  setFormElementDisabled(true);
-
 

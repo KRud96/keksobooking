@@ -1,8 +1,5 @@
 import getData from "./backend";
-
-const adsNearby = [];
-
-//window.getData(function(setADS){});
+export const adsNearby = [];
 
 getData(function(requestFromServer){
 for(let i=0; i < requestFromServer.length; i++){
@@ -35,4 +32,4 @@ for(let i=0; i < requestFromServer.length; i++){
     ]);
 }
 })
-//console.log(adsNearby)
+ 
